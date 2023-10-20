@@ -1,0 +1,258 @@
+*{
+   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+
+    font-size: 62.5%;
+  }
+  body{
+      margin:0;
+      padding:0rem;
+      background:url(../images//background//eiffel1.jpg) no-repeat;
+      height: 90.8vh;
+      background-size: 100% 100%;
+      text-align: center;
+  }
+  body h1{
+      margin-top: 7%; 
+  }
+  .container{
+      width: 40%;
+      height: 80%;
+      margin: -2% 27%;
+      padding: 4rem;
+  }
+  .textbox
+  {
+      width:100%;
+      overflow:hidden;
+      font-size:2rem;
+      padding:2rem 0;
+  }
+  .textbox input {
+      border:0.2rem solid #000;
+      border-radius: 0.5rem;
+      outline:none;
+      background: white;
+    box-shadow: black 0.3rem 0.3rem 3rem inset;
+      color:black;
+      font-size:1.8rem;
+      width: 50%;
+      height: 3rem;
+      
+  }
+  
+  .textbox input::placeholder{
+      color: rgb(12, 11, 11);
+  }
+  .btn input{
+      margin-top: 1rem;
+      width: 50%;
+      height: 4rem;
+      border-radius: 0.8rem;
+      transition: 0.6s ease;
+  }
+  .btn input:hover{
+      background-color:orangered;
+    box-shadow: black 0.3rem 0.3rem 0.3rem inset;
+  }
+  
+  /* nav styles */
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin-top: 2rem;
+    margin-right: 5rem;
+  }
+  
+  ul li{
+    display: inline;
+  }
+  
+  .main{
+    position: fixed;
+    display: block;
+    top: 0.9rem;
+    float: left;
+  }
+  
+  .nav .logo img{
+    position: relative;
+    float: left;
+    width:6rem;
+    height:6rem;
+    border-radius: 50%;
+    top: -2rem;
+    margin-left: -10%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+  
+  }
+  .search{
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .search input[type=text]{
+    position: relative;
+    float: left;
+    top:-1.8rem;
+    left: 5%;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid black;
+    transition: 0.6s ease;
+  }
+  .hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+  
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav__link a:hover {
+  background-color: lightcoral;
+}
+
+.hide {
+  display: none;
+}
+  
+  .search input[type=text]:hover{
+    background-color: #dcdcdc;
+  }
+  
+  
+  .search input[type=image]{
+    position: relative;
+    float: right;
+    top:-5rem;
+    left: 2%;
+    margin-left: 20%; 
+    padding: 0.4rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    transition: 0.6s ease;
+    background-color: #fff;
+  }
+  
+  .nav input[type=image]:hover{
+    background-color: rgb(209, 208, 208);
+  }
+  
+  
+  
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  @media (max-width:62em) {
+   body h1{
+      margin-top: 20rem;
+      font-size: 9rem;
+    }
+   .textbox input{
+    font-size:2rem;
+      width: 90%;
+      height: 8rem;
+    font-size: 4rem;
+    left: 1rem;
+    margin: 2rem;
+   }
+   .btn input{
+    width: 90%;
+    height: 8rem;
+    left: 1rem;
+    font-size: 4rem;
+   }
+   .container{
+      width: 50%;
+      height: 80%;
+      margin: -2% 27%;
+      
+  }
+  .search input[type=text]{
+   height: 5rem;
+   width: 50rem;
+   font-size: 4rem;
+  
+  }
+  .nav{
+    position: fixed;
+    display: block;
+    top: 0.9rem;
+    float: left;
+  }
+  .search input[type=image]{
+    height: 5rem;
+    width: 5rem;
+    left: 9rem;
+    top: -8rem;
+  }
+  .nav .logo img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+  
+  
+  }
+  @media screen and (min-width: 1030px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }

@@ -1,0 +1,218 @@
+html{
+  font-size: 62.5%;
+}
+body{
+	margin:0;
+	padding:0;
+  background-color:  white;
+	height: 84vh;
+	background-size: 100% 100%;
+}
+h1{
+	text-align: center;
+	height: 5rem;
+	background-color: goldenrod;
+	font-size: 3rem;
+}
+.feedback{
+	position: relative;
+	border: 0.2rem solid black;
+	border-radius: 0.5rem;
+  background-color:whitesmoke;
+  font-size: 1.5rem;
+	width: 50%;
+	height: 80%;
+	margin: 12rem 25%;
+}
+.form-group{
+	margin: 3rem 30%;
+}
+.form-group label{
+	margin:0rem 2rem; 
+}
+.form-group input{
+	border:0.01rem solid #000;
+	border-radius: 0.5rem;
+	width: 50%;
+	height: 2rem;
+}
+.text1 label{
+	margin:0px 2.7rem; 
+}
+.form-group .inputTextarea{
+	margin: 1rem 2rem;
+	width: 85%;
+	height: 9rem;
+	border:0.1rem solid #000;
+	border-radius: 0.5rem;
+}
+.wrapper button{
+	margin: 0rem 40%;
+	width: 20%;
+	height: 3rem;
+	border-radius: 0.8rem;
+	transition: 0.6s ease;
+}
+.wrapper button:hover{
+	background-color: orangered;
+  border-radius: 0.8rem;
+  box-shadow: red 0.3rem 30.3rem 0.3rem inset ;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* nav styles */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.logo img {
+  position: relative;
+  float: left;
+  top: -2rem;
+  margin-left: -5%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+.search{
+
+  display: inline;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search input[type=text]{
+  position: relative;
+  float: left;
+  width: 35rem;
+  /* height: 5; */
+  margin-top: 1rem;
+  left: 5%;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  border: 0.1rem solid #a1a1fe;
+  transition: 0.6s ease;
+}
+
+.search input[type=text]:hover{
+  background-color: #dcdcdc;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav__link a:hover {
+  background-color: lightcoral;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width:62em) {
+  html{
+    font-size: 55%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@media  screen and (max-width:62em) {
+  body{
+    width: 90%;
+  }
+  .feedback{
+    width: 90%;
+    height: 90%;
+    margin-left: 10rem;
+    margin-top: 50rem;
+  }
+  h1{
+    font-size: 8rem;
+    height: 10rem;
+  }
+  .form-group .form-control{
+    height: 5rem;
+    width: 100%;
+    font-size: 5rem;
+  }
+  .form-group{
+    margin-top: 10rem;
+    font-size: 5rem;
+  }
+  .form-group .inputTextarea{
+    height: 25rem;
+    font-size: 5rem;
+    width: 100%;
+    overflow: wrap;
+  }
+  .wrapper button{
+    height: 20rem;
+    width: 70%;
+    margin-left: 15rem;
+    background-color: goldenrod;
+    font-size: 5rem;
+  }
+  .btn{
+    margin-top: 10rem;
+    padding-top :2rem ;
+  }
+  
+}
